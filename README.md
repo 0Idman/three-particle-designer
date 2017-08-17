@@ -2,7 +2,7 @@
 
 Author(s): [rohan-deshpande](http://github.com/rohan-deshpande)
 
-Last updated: 2017-08-17
+Last updated: 2017-08-18
 
 ## Abstract
 
@@ -40,16 +40,38 @@ If we want to get really advanced, we would add some kind of path finding where 
 
 ## Rationale
 
-There aren't really any alternative approaches here. The drawback is that it will most likely be quite a lot of work, it's best if we start with simple features first then expand it later if need be.
+The main draw back here of course is that it's going to be a lot of work.
+
+One alternate approach could be to build a `three` based particle effect importer. While this could be possible, there are some issues with this approach. 
+
+Mainly, this will couple your `three` app to another app. If that app is open source or well supported, then that might be fine, however any API changes in that app will cause the importer to also require an update.
+
+The advantage of this method would be that the actual designing would already be taken care of. 
+
+I'm actively researching other potential particle designers right now to see if this might be possible. I'm not having much luck though.
 
 ## Implementation
 
 As mentioned above there are a few open source libraries which we will have to use to make this in a reasonable amount of time while still delivering something stable. In terms of UX, I would take more of a Photoshop like approach in terms of layout as opposed to Particle Designer. Palettes will allow the UI to scale better than panes.
 
-We should definitely use a UI kit to make things easier, I recommend [ant design](https://ant.design/) as it has a lot of pre built components we can leverage.
+I have a UI kit I have developed for **[Project GoldScript](http://projectgoldscript.com)** which could definitely be leveraged. It currently has a file menu, toolbar and draggable palettes. 
 
-## Open issues (if applicable)
+If we want to go with a new UI kit, I recommend [**ant design**](https://ant.design/) as it has a lot of pre built components we can leverage.
 
-There's definitely some unknowns here. One major one for me is that Particle Designer doesn't seem to really have a "timeline" like feature which would be very useful for creating particle effect sequences. This of course would be a tonne of work, but I'm not sure how an effect would "start" and "end" without one.
+## Open issues
+
+### Sequences
+
+One issue is that Particle Designer doesn't seem to really have a "timeline" like feature which would be very useful for creating particle effect sequences. This of course would be a tonne of work, but I'm not sure how an effect would "start" and "end" without one.
+
+### Collisions
 
 There's also the question of collisions. This is something that is not relevant to 2D environments but is very real for 3D ones. Particles colliding with 3D meshes can create ugly clipping like effects and artifacts. I'm not sure if the designer should have some kind of control for this or if that should be the job of the tool importing the particle design data which the app exports.
+
+### Electron vs NWJS
+
+My vote for NWJS is simply due to its ability to protect source code. If we plan on selling the app at all later then this will come in handy.
+
+### License
+
+What kind of license should we develop this under? Given the gap in the market for a tool like this, I think there is potential to monetize it, I think all contributors should agree on what the plan should be going forward.

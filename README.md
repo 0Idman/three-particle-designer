@@ -30,6 +30,14 @@ This app will leverage, `three` and one of the libraries listed above for visual
 
 Much like 71Squared's **[Particle Designer](https://71squared.com/particledesigner)** a desktop application will need to be created with a number of views and controls to support the ability design, save, edit and export particles. 
 
+![main](files/particle-designer/main.png)
+![layers](files/particle-designer/system-emitter-layers.png)
+![settings-1](files/particle-designer/settings-1.png)
+![settings-2](files/particle-designer/settings-2.png)
+![settings-3](files/particle-designer/settings-3.png)
+![settings-4](files/particle-designer/settings-4.png)
+![shared-emitters](files/particle-designer/shared-emitters.png)
+
 The difference to Particle Designer is that particles will need to support emission in 3D space.
 
 I propose that we leverage what this application is doing as much as we can, but add features to make the particles work in 3D space. 

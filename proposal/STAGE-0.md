@@ -1,4 +1,4 @@
-# Application
+# Stage 0
 
 Author(s): [rohan-deshpande](http://github.com/rohan-deshpande)
 

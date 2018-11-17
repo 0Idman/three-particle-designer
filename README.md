@@ -68,7 +68,9 @@ In terms of UI toolkits, we'll need something which can deliver things like well
 
 ### PoC
 
-There's a codepen for the UI [here](https://codepen.io/rohandeshpande/pen/jQmrWW) it's really nothing right now but it's a nice place to hack on the general layout for now.
+[https://codepen.io/rohandeshpande/pen/jQmrWW](https://codepen.io/rohandeshpande/pen/jQmrWW)
+
+The above codepen is a basic proof of concept for the ui, there's not much there now but it just gives an idea of how the layout might work.
 
 ## Open issues
 
@@ -78,7 +80,7 @@ One issue is that Particle Designer doesn't seem to really have a "timeline" lik
 
 ### Collisions
 
-There's also the question of collisions. This is something that is not relevant to 2D environments but is very real for 3D ones. Particles colliding with 3D meshes can create ugly clipping like effects and artifacts. I'm not sure if the designer should have some kind of control for this or if that should be the job of the tool importing the particle design data which the app exports.
+There's also the question of collisions. This is something that is not relevant to 2D environments but is very real for 3D ones. Particles colliding with 3D meshes can create ugly clipping like effects and artefacts. I'm not sure if the designer should have some kind of control for this or if that should be the job of the tool importing the particle design data which the app exports.
 
 ### Electron vs NWJS
 

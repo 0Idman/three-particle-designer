@@ -4,6 +4,8 @@ Author(s): [rohan-deshpande](http://github.com/rohan-deshpande)
 
 Last updated: 2018-11-17
 
+Status: **In Progress**
+
 ## [Stage 0](STAGE-0.md)
 
 ### Outcomes
